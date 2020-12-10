@@ -65,6 +65,7 @@ class Trainer(object):
         logger.info("  Total optimization steps = %d", t_total)
         logger.info("  Logging steps = %d", self.args.logging_steps)
         logger.info("  Save steps = %d", self.args.save_steps)
+        logger.info("  Device used = {}".format(self.device) )
 
         global_step = 0
         tr_loss = 0.0
